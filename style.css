@@ -10,6 +10,11 @@
 }
 body{
     background-image: url(background\ img.png);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 nav{
     height: 80px;
@@ -59,7 +64,7 @@ a:hover{
 }
 .checkbtn{
     font-size: 30px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     float: right;
     line-height: 80px;
     margin-right: 40px;
@@ -69,13 +74,12 @@ a:hover{
 #check{
     display: none;
 }
-
 @media (max-width: 952px){
     nav ul li a{
         font-size: 16px;
     }    
 }
-@media (max-width: 858px){
+@media (max-width: 862px){
     .checkbtn{
         display: block;
     }
@@ -104,7 +108,6 @@ a:hover{
         left: 0;
     }
 }
-
 .main{
     display: flex;
     align-items: center;
@@ -138,7 +141,7 @@ a:hover{
     margin-left: 35px;
     color: #fff;
     font-size: 15px;
-   
+
 }
 .second{
     height: 100%;
@@ -147,12 +150,11 @@ a:hover{
     border-top-right-radius: 13px;
     border-bottom-right-radius: 13px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-border-left: none;
-
-background: rgba( 53, 55, 110, 0.7 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 18px );
--webkit-backdrop-filter: blur( 20px );
+    border-left: none;
+    background: rgba( 53, 55, 110, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 18px );
+    -webkit-backdrop-filter: blur( 20px );
 }
 .second h1{
     font-size: 30px;
@@ -204,9 +206,491 @@ button{
     margin-left: 1%;
     margin-top: 15px;
 }
-.Google{
+.second .Google{
     height: 10.5vh;
-   
     position: relative;
     left: -25px;
+}
+
+/* @media (max-width: 740px){
+    .container{
+        display: flex;
+        height: 450px;
+        width: 600px;
+    }
+    .second h1{
+        font-size: 25px;
+        margin-top: 40px;
+        color: white;
+    }
+    .second p{
+        margin-top: 15px;
+        font-size: 9px;
+        color: #8085A0;
+    }
+    .label h3{
+        font-weight: 400;
+         font-size: 13px;
+         margin-top: 15px;
+     }
+     .label input{
+         border: 1px solid #595F9B;
+         padding: 7px 24px;
+         border-radius: 8px; 
+         background-color: #494C7A; 
+         margin-top: 5px;
+     }
+     .reset {
+        color: #0082e6;
+        font-size: 11px;
+        font-weight: bolder;
+    }
+    button{
+        border: 2px solid transparent;
+        margin-top: 15px;
+        padding: 7px 80px;
+        border-radius: 8px;
+        font-size: 15px;
+        background:linear-gradient(#A336C6,#A336C6)padding-box,linear-gradient(to right,#A05AC2,#6432A9) border-box;
+        box-shadow: -10px -10px 15px -10px #A05AC2,inset 2px 3px 25px #6432A9;
+        color: #fff;
+    }
+    .hi p{
+        margin-top: 20px;
+        font-size: 9px;
+    }
+    .or{
+        height: 1.5vh;
+        width: 80%;
+        margin-left: 1%;
+        margin-top: 10px;
+    }
+    .Google{
+        height: 12.5vh;
+        position: relative;
+        bottom: 8px;
+        left: -25px;
+    }
+}
+
+@media (max-width: 640px){
+    .first h2{
+        margin-top: 40px;
+        margin-left: 30px;
+        color: #fff;
+        font-size: 20px;
+    }
+    .first p{
+        margin-left: 30px;
+        color: #fff;
+        font-size: 12px;
+    }
+    .second{
+        height: 100%;
+        width: 50%;
+        padding-left: 25px;
+        border-top-right-radius: 13px;
+        border-bottom-right-radius: 13px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-left: none;
+    
+    background: rgba( 53, 55, 110, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 18px );
+    -webkit-backdrop-filter: blur( 20px );
+    }
+    .container{
+        display: flex;
+        height: 400px;
+        width: 500px;
+    }
+    .second h1{
+        font-size: 20px;
+        margin-top: 40px;
+        color: white;
+    }
+    .second p{
+        margin-top: 12px;
+        font-size: 8px;
+        color: #8085A0;
+    }
+    .label h3{
+        font-weight: 400;
+         font-size: 12px;
+         margin-top: 12px;
+     }
+     .label input{
+         border: 1px solid #595F9B;
+         padding: 6px 20px;
+         border-radius: 8px; 
+         background-color: #494C7A; 
+         margin-top: 5px;
+     }
+    button{
+        border: 2px solid transparent;
+        margin-top: 15px;
+        padding: 6px 75px;
+        border-radius: 8px;
+        font-size: 15px;
+        background:linear-gradient(#A336C6,#A336C6)padding-box,linear-gradient(to right,#A05AC2,#6432A9) border-box;
+        box-shadow: -10px -10px 15px -10px #A05AC2,inset 2px 3px 25px #6432A9;
+        color: #fff;
+    }
+    .hi p{
+        margin-top: 15px;
+        font-size: 8px;
+    }
+    .or{
+        height: 1.5vh;
+        width: 88%;
+        margin-left: 1%;
+        margin-top: 5px;
+    }
+    .Google{
+        height: 12vh;
+        position: relative;
+        bottom: 7px;
+        left: -25px;
+    }
+} */
+
+@media (max-width: 740px){
+    .main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 80px);
+        width: 100vw;
+        font-family: 'Roboto', sans-serif;
+    }
+    .container{
+        display: flex;
+        height: 450px;
+        width: 600px;
+    }
+    .first{
+        height: 100%;
+        width: 50%;
+        background-image: url(Main.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top-left-radius: 13px;
+        border-bottom-left-radius: 13px;
+    }
+    .first h2{
+        margin-top: 30px;
+        margin-left: 30px;
+        color: #fff;
+        font-size: 20px;
+    }
+    .first p{
+        margin-left: 30px;
+        color: #fff;
+        font-size: 13px;
+    
+    }
+    .second{
+        height: 100%;
+        width: 50%;
+        padding-left: 40px;
+        border-top-right-radius: 13px;
+        border-bottom-right-radius: 13px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        border-left: none;
+        background: rgba( 53, 55, 110, 0.7 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 18px );
+        -webkit-backdrop-filter: blur( 20px );
+    }
+    .second h1{
+        font-size: 28px;
+        margin-top: 30px;
+        color: white;
+    }
+    .second p{
+        margin-top: 10px;
+        font-size: 10px;
+        color: #8085A0;
+    }
+    .label {
+        color: white;
+     
+    }
+    .label h3{
+       font-weight: bold;
+        font-size: 13px;
+        margin-top: 13px;
+    }
+    .label input{
+        border: 1px solid #595F9B;
+        padding: 6px 28px;
+        border-radius: 7px; 
+        background-color: #494C7A; 
+        margin-top: 5px;
+    }
+    .reset {
+        color: #0082e6;
+        font-size: 12px;
+        font-weight: bolder;
+    }
+    button{
+        border: 2px solid transparent;
+        margin-top: 15px;
+        padding: 7px 83px;
+        border-radius: 8px;
+        font-size: 15px;
+        background:linear-gradient(#A336C6,#A336C6)padding-box,linear-gradient(to right,#A05AC2,#6432A9) border-box;
+        box-shadow: -10px -10px 15px -10px #A05AC2,inset 2px 3px 25px #6432A9;
+        color: #fff;
+    }
+    .hi p{
+        margin-top: 15px;
+    }
+    .or{
+        height: 1.5vh;
+        width: 80%;
+        margin-left: 1%;
+        margin-top: 15px;
+    }
+    .second .Google{
+        height: 10.5vh;
+        position: relative;
+        left: -25px;
+    }
+}
+@media (max-width: 620px){
+    .main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 80px);
+        width: 100vw;
+        font-family: 'Roboto', sans-serif;
+    }
+    .container{
+        display: flex;
+        height: 400px;
+        width: 500px;
+    }
+    .first{
+        height: 100%;
+        width: 50%;
+        background-image: url(Main.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top-left-radius: 13px;
+        border-bottom-left-radius: 13px;
+    }
+    .first h2{
+        margin-top: 25px;
+        margin-left: 20px;
+        color: #fff;
+        font-size: 17px;
+    }
+    .first p{
+        margin-left: 25px;
+        color: #fff;
+        font-size: 12px;
+    
+    }
+    .second{
+        height: 100%;
+        width: 50%;
+        padding-left: 25px;
+        border-top-right-radius: 13px;
+        border-bottom-right-radius: 13px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-left: none;
+    
+    background: rgba( 53, 55, 110, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 18px );
+    -webkit-backdrop-filter: blur( 20px );
+    }
+    .second h1{
+        font-size: 25px;
+        margin-top: 25px;
+        color: white;
+    }
+    .second p{
+        margin-top: 5px;
+        font-size: 9px;
+        color: #8085A0;
+    }
+    .label {
+        color: white;
+    }
+    .label h3{
+       font-weight: bold;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .label input{
+        border: 1px solid #595F9B;
+        padding: 4px 15px;
+        border-radius: 7px; 
+        background-color: #494C7A; 
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .reset {
+        /* margin-top: 15px; */
+        color: #0082e6;
+        font-size: 10px;
+        font-weight: bolder;
+    }
+    button{
+        border: 2px solid transparent;
+        margin-top: 15px;
+        padding: 5px 71px;
+        border-radius: 8px;
+        font-size: 15px;
+        background:linear-gradient(#A336C6,#A336C6)padding-box,linear-gradient(to right,#A05AC2,#6432A9) border-box;
+        box-shadow: -10px -10px 15px -10px #A05AC2,inset 2px 3px 25px #6432A9;
+        color: #fff;
+    }
+    .hi p{
+        margin-top: 12px;
+    }
+    .or{
+        height: 1.5vh;
+        width: 85%;
+        margin-left: 1%;
+        margin-top: 10px;
+    }
+    .second .Google{
+        height: 9.7vh;
+        position: relative;
+        left: -25px;
+    }
+
+}
+
+@media (max-width: 530px){
+    .main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 80px);
+        width: 100vw;
+        font-family: 'Roboto', sans-serif;
+    }
+    .container{
+        display: flex;
+        height: 350px;
+        width: 450px;
+    }
+    .first{
+        height: 100%;
+        width: 50%;
+        background-image: url(Main.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top-left-radius: 13px;
+        border-bottom-left-radius: 13px;
+    }
+    .first h2{
+        margin-top: 25px;
+        margin-left: 20px;
+        color: #fff;
+        font-size: 17px;
+    }
+    .first p{
+        margin-left: 25px;
+        color: #fff;
+        font-size: 12px;
+    
+    }
+    .second{
+        height: 100%;
+        width: 50%;
+        padding-left: 22px;
+        border-top-right-radius: 13px;
+        border-bottom-right-radius: 13px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-left: none;
+    
+    background: rgba( 53, 55, 110, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 18px );
+    -webkit-backdrop-filter: blur( 20px );
+    }
+    .second h1{
+        font-size: 23px;
+        margin-top: 25px;
+        color: white;
+    }
+    .second p{
+        margin-top: 5px;
+        font-size: 9px;
+        color: #8085A0;
+    }
+    .label {
+        color: white;
+     
+    }
+    .label h3{
+       font-weight: bold;
+        font-size: 11px;
+        margin-top: 10px;
+    }
+    .label input{
+        border: 1px solid #595F9B;
+        padding: 3px 10px;
+        border-radius: 7px; 
+        background-color: #494C7A; 
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .reset {
+        /* margin-top: 15px; */
+        color: #0082e6;
+        font-size: 9px;
+        font-weight: bolder;
+    }
+    button{
+        border: 2px solid transparent;
+        margin-top: 15px;
+        padding: 4px 65px;
+        border-radius: 8px;
+        font-size: 15px;
+        background:linear-gradient(#A336C6,#A336C6)padding-box,linear-gradient(to right,#A05AC2,#6432A9) border-box;
+        box-shadow: -10px -10px 15px -10px #A05AC2,inset 2px 3px 25px #6432A9;
+        color: #fff;
+    }
+    .hi p{
+        margin-top: 12px;
+        font-size: 8px;
+    }
+    .or{
+        height: 1.5vh;
+        width: 85%;
+        margin-left: 1%;
+        margin-top: 7px;
+    }
+    .second .Google{
+        height: 11.0vh;
+        position: relative;
+        bottom: 8px;
+        left: -19px;
+    }
+}
+@media (min-width: 470px){
+    .main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 80px);
+        width: 100vw;
+        font-family: 'Roboto', sans-serif;
+        overflow: hidden;
+    }
+    .second .Google {
+        height: 9vh;
+        position: relative;
+        left: -25px;
+    }
 }
